@@ -1,0 +1,123 @@
+/* Estilos básicos */
+@charset "UTF-8";
+
+/* Define um tamanho base para a fonte */
+html {
+    font-size: 16px;
+}
+
+/* Fontes */
+@font-face {
+    font-family: 'smile nice';
+    src: url('Smile Nice.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'CampanaScript';
+    src: url('CampanaScript_PERSONAL_USE_ONLY.otf') format('opentype');
+}
+
+/* Layout geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px; /* Define a largura máxima do conteúdo */
+    margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+    padding: 20px; /* Adiciona um espaço interno */
+    box-sizing: border-box; /* Considera padding e bordas como parte do tamanho total */
+}
+
+/* Cabeçalho */
+header {
+    background-image: url("imagens/GettyImages-1129377183.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    border: 1px solid #ccc;
+    padding: 20px;
+    color: #fcfbfb;
+    text-align: justify;
+    border-radius: 10px;
+    text-shadow:2px 2px 4px rgba(0,0,0,0.5);
+}
+.textoresumo{ 
+ 
+    font-size: 15px;
+    line-height: 1.5;
+    text-shadow:4px 4px 4px rgba(0,0,0,0.5);
+    font-weight: bold;
+    
+}
+/* Conteúdo principal */
+main {
+    background-image: url('imagens/pexels-305211.jpg');
+    background-attachment: fixed;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: rgb(73, 73, 73);
+    color: #fffdfd;
+    text-align: justify;
+    border-radius: 10px;
+}
+
+article {
+    font-size: 1em; /* Use unidades relativas */
+    line-height: 1.5;
+}
+
+/* Rodapé */
+footer {
+    font-size: 0.875em; /* Use unidades relativas */
+    padding: 15px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+}
+
+/* Títulos */
+h1 {
+    font-family: 'CampanaScript';
+    font-size: 3em; /* Use unidades relativas */
+    margin: 0;
+    color: #fcfbfb;
+    text-shadow: #000;
+}
+
+h2 {
+    font-family: 'smile nice';
+    font-size: 1.5em; /* Use unidades relativas */
+    color: #ccc;
+    background: linear-gradient(to top, #000, #d3d2d2);
+    padding: 10px;
+    border-radius: 10px 0 10px 0;
+}
+
+/* Links */
+a {
+    color: #494949;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #000;
+    background-color: #a6f705;
+    border-radius: 10px;
+}
+
+/* Imagem circular */
+.fotocircular {
+    width: 10em; /* Tamanho base em unidades relativas */
+    height: 10em; /* Tamanho base em unidades relativas */
+    border-radius: 50%; /* Cria uma forma circular */
+    overflow: hidden;
+    background: url('capture-20211029-091813.png') no-repeat center center;
+    background-size: cover;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
