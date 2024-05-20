@@ -35,26 +35,29 @@ body {
 header {
     background-image: url("imagens/GettyImages-1129377183.jpg");
     background-size: cover;
-    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
     border: 1px solid #ccc;
     padding: 20px;
     color: #fcfbfb;
     text-align: justify;
     border-radius: 10px;
-    text-shadow:2px 2px 4px rgba(0,0,0,0.5);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
-.textoresumo{ 
- 
+
+.textoresumo {
     font-size: 15px;
     line-height: 1.5;
-    text-shadow:4px 4px 4px rgba(0,0,0,0.5);
+    text-shadow: 4px 4px 4px rgba(0,0,0,0.5);
     font-weight: bold;
-    
 }
+
 /* Conteúdo principal */
 main {
     background-image: url('imagens/pexels-305211.jpg');
-    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     border: 1px solid #ccc;
     padding: 20px;
     background-color: rgb(73, 73, 73);
@@ -121,3 +124,21 @@ a:hover {
     align-items: center;
 }
 
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    header, main {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    .container {
+        padding: 10px;
+    }
+}
